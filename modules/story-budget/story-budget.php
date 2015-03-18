@@ -6,36 +6,32 @@
  * @author sbressler
  */
 class EF_Story_Budget extends EF_Module {
-
+	
 	var $taxonomy_used = 'category';
-
-	var $custom_taxonomy = 'publication';
-
+	
 	var $module;
-
+	
 	var $num_columns = 0;
-
+	
 	var $max_num_columns;
-
+	
 	var $no_matching_posts = true;
-
+	
 	var $terms = array();
-
+	
 	var $user_filters;
-
+	
 	const screen_id = 'dashboard_page_story-budget';
-
+	
 	const usermeta_key_prefix = 'ef_story_budget_';
-
+	
 	const default_num_columns = 1;
-
+	
 	/**
 	 * Register the module with Edit Flow but don't do anything else
 	 */
 	function __construct() {
-
-		global $edit_flow;
-
+	
 		$this->module_url = $this->get_module_url( __FILE__ );
 		// Register the module with Edit Flow
 		$args = array(
