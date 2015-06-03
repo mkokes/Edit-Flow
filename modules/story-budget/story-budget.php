@@ -21,6 +21,8 @@ class EF_Story_Budget extends EF_Module {
 	
 	var $user_filters;
 	
+	var $custom_taxonomy = 'publication';
+	
 	const screen_id = 'dashboard_page_story-budget';
 	
 	const usermeta_key_prefix = 'ef_story_budget_';
